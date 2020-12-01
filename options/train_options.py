@@ -5,6 +5,7 @@ class TrainOptions(BaseOptions):
     def initialize(self):
         BaseOptions.initialize(self)
         self.parser.add_argument('--phase', type=str, default='train', help='train, val, test, etc')
+        self.parser.add_argument('--num_classes', type=int, required=True, default=5, help='N classification')
         self.parser.add_argument('-e', '--epoch', help='epoch number', type=int, default=200)
 
         self.parser.add_argument('--batchSize', type=int, default=1, help='input batch size')

@@ -95,7 +95,7 @@ def train_multiGPUS():
     exp_name = opt.name
     model = opt.model
     batchSize = opt.batchSize
-    num_classes = 5
+    num_classes = opt.num_classes
     feature_extract = opt.feature_extract
     nThreads = opt.nThreads
     checkpoints_dir = opt.checkpoints_dir
